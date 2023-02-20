@@ -36,6 +36,18 @@ Namespace TestProject1
             Dim fizzBuzzResult As String = FizzBuzzify(15)
             Assert.AreEqual("FizzBuzz", fizzBuzzResult)
         End Sub
+
+        <TestCase(3)>
+        <TestCase(9)>
+        <TestCase(12)>
+        <TestCase(18)>
+        Public Sub MultOfThreeIsFizz(ByVal mltofthree As Integer)
+            Dim fizzBuzzResult As String = FizzBuzzify(mltofthree)
+            Assert.AreEqual("Fizz", fizzBuzzResult)
+        End Sub
+
     End Class
+
+
 
 End Namespace

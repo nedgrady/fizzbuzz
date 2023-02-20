@@ -12,14 +12,14 @@ Public Module Program
     End Sub
 
     Public Function FizzBuzzify(ByVal number As Integer)
-        If number = 3 Then
-            Return "Fizz"
-
-        ElseIf number = 5 Then
+        If number = 5 Then
             Return "Buzz"
 
         ElseIf number = 15 Then
             Return "FizzBuzz"
+
+        ElseIf number Mod 3 = 0 Then
+            Return "Fizz"
         End If
 
         Return number
